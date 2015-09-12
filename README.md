@@ -48,7 +48,7 @@ https://github.com/reneighbor/set-python/commit/ce8ee258cb579e6cb8cad967bd67ad26
 And your test output looks like this:
 
 
-`
+```
 rchu:set-python renee$ nosetests
 F
 ======================================================================
@@ -67,4 +67,4 @@ AssertionError:
 Ran 1 test in 0.004s
 
 FAILED (failures=1)
-`
+```
