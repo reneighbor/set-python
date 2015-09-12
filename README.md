@@ -68,3 +68,11 @@ Ran 1 test in 0.004s
 
 FAILED (failures=1)
 ```
+### 3. Write out unit tests for the test cases of your construct, then write the construct. 
+
+Pretty self-explanatory. I will say I tested and implemented the empty case first (`test_construct_empty`), then tested and implemented the case with initializing elements.
+
+A side note is that I had to do some thinking about whether my set *is* an empty list (`self = []`), or whether my set *has* elements which are an empty list (`self.elements = []`). I decided on the latter (and re-wrote my test plan accordingly); just like a list *has* items, a set *has* items (or elements). But it *is* a set, this new thing that is being created. Talk about abstract thinking :)
+
+At this point the project looks like this:
+https://github.com/reneighbor/set-python/commit/6de741ce1723d1af93d850b76730c5d6c4d036f5
