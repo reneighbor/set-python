@@ -26,7 +26,7 @@ The task is to implement a set in Python using Test-Driven Development (TDD), bu
 8. union(setA, setB). Creates a new set that contains all elements in both setA and setB.
 intersect.
 
-### 2) Set up your project and tests with basic "hello world" functionality to make sure everything is wired up.
+### 2. Set up your project and tests with basic "hello world" functionality to make sure everything is wired up.
 
 Set up your project folder, with one file for tests and one folder for your class. Write a test that simply asserts 1==1, to ensure your testing framework is set up as expected:
 
