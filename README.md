@@ -30,9 +30,9 @@ intersect.
 
 Write a test that simply asserts 1==1, to ensure your testing framework is set up as expected. At this point the project looks like this:
 
-`set-python/
- 	- tests.py
-	- set.py`
+set-python/ <br/>
+ 	-tests.py <br/>
+	-set.py <br/>
 	
 
 And the tests file looks like this:
