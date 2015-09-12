@@ -12,7 +12,7 @@ The task is to implement a set in Python using Test-Driven Development (TDD), bu
 
 ### 1. Write the spec of methods you need to support and test cases for the first two features of the spec.
 
-1. __init__(self, elements = []) - Create a new set, optionally passing in a list which will be the starting elements of the set.
+1. init(self, elements = []) - Create a new set, optionally passing in a list which will be the starting elements of the set.
   * When you create a new set without passing in elements, my new set is an empty list.
   * When you create a new set that does have starting elements, the new set will be the same size as the starting list and contain all elements of the starting list.
 2. add(self, item) - adds an item to the set, if it is not yet in the set.
