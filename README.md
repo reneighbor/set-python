@@ -26,14 +26,45 @@ The task is to implement a set in Python using Test-Driven Development (TDD), bu
 8. union(setA, setB). Creates a new set that contains all elements in both setA and setB.
 intersect.
 
-### 2 Set up your project folder, with one file for tests and one file for your class. 
+### 2) Set up your project and tests with basic "hello world" functionality to make sure everything is wired up.
 
-Write a test that simply asserts 1==1, to ensure your testing framework is set up as expected. At this point the project looks like this:
+Set up your project folder, with one file for tests and one folder for your class. Write a test that simply asserts 1==1, to ensure your testing framework is set up as expected:
 
-set-python/ <br/>
-  -tests.py <br/>
-  -set.py <br/>
-	
+At this point the project files look like this:
+
+set-python
+	tests.py
+	set.py
 
 And the tests file looks like this:
 	https://github.com/reneighbor/set-python/commit/f680e809d3cb93ce6e311064448b4a300dd7ac02
+
+Write your class with one simple, empty __init__(), and make sure you can import it from your tests. Make sure you can print out an instance of your class. Have your assertion test 1==2, otherwise the unit test framework will print out your print statements.
+
+At this point your project looks like this:
+
+https://github.com/reneighbor/set-python/commit/ce8ee258cb579e6cb8cad967bd67ad26a0c0bd6a
+
+And your test output looks like this:
+
+
+`
+rchu:set-python renee$ nosetests
+F
+======================================================================
+FAIL: test_construct (tests.SetTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/renee/Projects/personal-projects/set-python/tests.py", line 11, in test_construct
+    assert 1 == 2
+AssertionError: 
+-------------------- >> begin captured stdout << ---------------------
+<_set.Set instance at 0x1055b45a8>
+
+--------------------- >> end captured stdout << ----------------------
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (failures=1)
+`
