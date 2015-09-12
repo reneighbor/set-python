@@ -32,7 +32,9 @@ Write a test that simply asserts 1==1, to ensure your testing framework is set u
 
 set-python/
  	- tests.py
+ 	
 	- set.py
+	
 
 And the tests file looks like this:
 	https://github.com/reneighbor/set-python/commit/f680e809d3cb93ce6e311064448b4a300dd7ac02
