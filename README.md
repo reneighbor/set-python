@@ -39,7 +39,7 @@ set-python</br>
 And the tests file looks like this:
 	https://github.com/reneighbor/set-python/commit/f680e809d3cb93ce6e311064448b4a300dd7ac02
 
-Write your class with one simple, empty __init__(), and make sure you can import it from your tests. Make sure you can print out an instance of your class. Have your assertion test 1==2, otherwise the unit test framework will print out your print statements.
+Make sure you can import your class from your tests. Make sure you can print out an instance of your class. Have your assertion test 1==2, otherwise the unit test framework will print out your print statements.
 
 At this point your project looks like this:
 
