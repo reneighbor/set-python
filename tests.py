@@ -22,3 +22,16 @@ class SetTest(unittest.TestCase):
         # TODO when size() is implemented, assert
         # size is 2
         assert test_set.elements == [1, 2]
+
+    def test_add(self):
+        test_set = Set([1, 2, 3])
+        test_set.add(4)
+
+        assert test_set.elements == [1, 2, 3, 4]
+
+    def test_add_duplicate(self):
+        test_set = Set([1, 2, 3])
+        test_set.add(3)
+
+        assert test_set.elements == [1, 2, 3]
+

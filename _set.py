@@ -8,4 +8,7 @@ class Set:
                 self.elements.append(element)
 
 
-   
+    def add(self, element):
+
+        if element not in self.elements:
+            self.elements.append(element)
