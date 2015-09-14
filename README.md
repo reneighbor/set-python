@@ -78,7 +78,8 @@ A side note is that I had to do some thinking about whether my set *is* an empty
 At this point the project looks like this:
 https://github.com/reneighbor/set-python/commit/6de741ce1723d1af93d850b76730c5d6c4d036f5
 
-### 4. Write out tests for and function definition for your first method, add(). Added the case where it's appended and where a duplicate is added.
+### 4. Write out tests for and function definition for your first method, add(). 
+Added the case where it's appended and where a duplicate is added.
 
 At this point the code looks like this:
 https://github.com/reneighbor/set-python/commit/5efbe96b6d0c222689d227c87df99aea38ed2188
