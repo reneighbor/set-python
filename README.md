@@ -25,7 +25,7 @@ The task is to implement a set in Python using Test-Driven Development (TDD), bu
 7. subsetOf(self, setB) - returns true if all items in the set are also in set_b. Returns false if it does not.
 8. union(self, setB). Creates a new set that contains all elements in both self and setB.
 9. intersect(self, setB). Creates a new set that contains all elements that are in both self and setB
-10. differen(self, setB). Creates a new set that contains all elements that are in self but not setB
+10. difference(self, setB). Creates a new set that contains all elements that are in self but not setB
 
 ### 2. Set up your project and tests with basic "hello world" functionality to make sure everything is wired up.
 
