@@ -12,15 +12,11 @@ class SetTest(unittest.TestCase):
     def test_construct_initial_elements(self):
         test_set = Set([1, 2, 3])
 
-        # TODO when size() is implemented, assert
-        # size is 3
         assert test_set.elements == [1, 2, 3]
 
     def test_construct_initial_elements_duplicates(self):
         test_set = Set([1, 2, 2])
 
-        # TODO when size() is implemented, assert
-        # size is 2
         assert test_set.elements == [1, 2]
 
     def test_add(self):
@@ -101,7 +97,7 @@ class SetTest(unittest.TestCase):
         test_set = Set([1, 2, 3])
         union_set = test_set.union(Set([4, 5]))
 
-        # TODO is it a problem that this fails?
+        # TODO ASK is it a problem that this fails?
         # assert union_set == Set([1, 2, 3, 4, 5])
         assert union_set.equals(Set([1, 2, 3, 4, 5]))
 
@@ -109,38 +105,36 @@ class SetTest(unittest.TestCase):
         test_set = Set([1, 2, 3])
         union_set = test_set.union(Set([1, 2]))
 
-        # TODO is it a problem that this fails?
+        # TODO ASK is it a problem that this fails?
         # assert union_set == Set([1, 2, 3])
         assert union_set.equals(Set([1, 2, 3]))
 
     def test_intersect(self):
         test_set = Set([1, 2, 3])
-
         intersect_set = test_set.intersect(Set([1, 2, 4]))
+
         assert intersect_set.equals(Set([1, 2]))
 
     def test_intersect_empty_set(self):
         test_set = Set([1, 2, 3])
-
         intersect_set = test_set.intersect(Set())
+
         assert intersect_set.equals(Set())
 
     def test_intersect_no_matches(self):
         test_set = Set([1, 2, 3])
-
         intersect_set = test_set.intersect(Set([4, 5]))
+
         assert intersect_set.equals(Set())
 
     def test_difference(self):
         test_set = Set([1, 2, 3])
-
         difference_set = test_set.difference(Set([1, 2, 4]))
 
         assert difference_set.equals(Set([3, 4]))
 
     def test_difference_all_matches(self):
         test_set = Set([1, 2, 3])
-
         difference_set = test_set.difference(Set([1, 2, 3]))
 
         assert difference_set.equals(Set())
