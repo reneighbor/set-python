@@ -22,9 +22,10 @@ The task is to implement a set in Python using Test-Driven Development (TDD), bu
 4. len(self) - returns a count of the number of items in the set.
 5. contains(self, item) - returns true if the item is in the set, false if it is not.
 6. equal(self, setB) - returns true if the set is equivalent to another set, setB. Returns false if it is not.
-7. subsetOf(setB) - returns true if all items in the set are also in set_b. Returns false if it does not.
-8. union(setA, setB). Creates a new set that contains all elements in both setA and setB.
-intersect.
+7. subsetOf(self, setB) - returns true if all items in the set are also in set_b. Returns false if it does not.
+8. union(self, setB). Creates a new set that contains all elements in both self and setB.
+9. intersect(self, setB). Creates a new set that contains all elements that are in both self and setB
+10. difference(self, setB). Creates a new set that contains all elements that are in self but not setB
 
 ### 2. Set up your project and tests with basic "hello world" functionality to make sure everything is wired up.
 
@@ -77,7 +78,15 @@ A side note is that I had to do some thinking about whether my set *is* an empty
 At this point the project looks like this:
 https://github.com/reneighbor/set-python/commit/6de741ce1723d1af93d850b76730c5d6c4d036f5
 
-### 4. Write out tests for and function definition for your first method, add(). Added the case where it's appended and where a duplicate is added.
+### 4. Write out tests for and function definition for your first method, add(). 
+Added the case where it's appended and where a duplicate is added.
 
 At this point the code looks like this:
 https://github.com/reneighbor/set-python/commit/5efbe96b6d0c222689d227c87df99aea38ed2188
+
+### 5. ...And all the rest. Here all the rest of the tests and implementations. I realized (and edited the spec after the fact) that I had forgotten specs for intersection() and difference(), so quickly added those as well. 
+
+When working on making a test pass, I also went back to the implementation for equals(), adding a sorted() when comparing the elements of the two compared sets. This ensures that equals() returns true regardless of the elements' sort order.
+
+Here is that one big commit:
+https://github.com/reneighbor/set-python/commit/118f08fd62b23cb9e7dffdc25ec0e37da1cb6965
